@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Little Things | Cozy Restaurant in Sofia</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">The Little Things</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#hours">Hours</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-image">
+      <img src="images/hero-illustration.jpg" alt="The Little Things - illustrated view of the cozy restaurant with its vine-covered old house, string lights, and garden seating">
+    </div>
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <p class="hero-subtitle">A cozy restaurant in the heart of Sofia</p>
+        <a href="#menu" class="btn">View Today's Specials</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="images/logo.jpg" alt="The Little Things logo - hand-lettered calligraphy on forest green background with botanical illustrations">
+        </div>
+        <div class="about-text">
+          <h2>Welcome Home</h2>
+          <p class="about-lead">A cozy restaurant located in the heart of Sofia's city center, situated in a charming old house.</p>
+          <p>The charming atmosphere, delicious food and our friendly staff will make you feel right at home. Hidden away in a courtyard on Tsar Shishman street, we've been serving homemade food with love for over 10 years.</p>
+          <div class="about-details">
+            <div class="detail">
+              <span class="detail-icon">&#127860;</span>
+              <span>Kitchen works till 21:45</span>
+            </div>
+            <div class="detail">
+              <span class="detail-icon">&#128054;</span>
+              <span>Dog friendly</span>
+            </div>
+            <div class="detail">
+              <span class="detail-icon">&#127793;</span>
+              <span>Vegetarian & vegan options</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Decorative divider -->
+  <div class="divider">
+    <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+      <path d="M0 20 Q 150 0, 300 20 T 600 20 T 900 20 T 1200 20" stroke="currentColor" fill="none" stroke-width="1.5"/>
+    </svg>
+  </div>
+
+  <!-- Menu / Today's Specials -->
+  <section id="menu" class="menu">
+    <div class="container">
+      <h2>Today's Specials</h2>
+      <p class="menu-date">Daily changing menu, crafted with seasonal ingredients</p>
+
+      <!-- Brunch -->
+      <div class="menu-category">
+        <h3>Brunch</h3>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h4>Meatball Soup with Parmesan, Spinach and Couscous</h4>
+            <span class="menu-price">4.50&#8364;</span>
+          </div>
+          <p class="menu-desc-bg">Супа с кюфтенца с пармезан, спанак и кус кус</p>
+          <span class="menu-weight">400ml</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h4>Fried Eggs on Brioche Bun</h4>
+            <span class="menu-price">9.20&#8364;</span>
+          </div>
+          <p class="menu-desc">with ham, gouda, green b&eacute;chamel sauce, peas and pickled mustard</p>
+          <p class="menu-desc-bg">Яйца на очи върху бриош питка с шунка, гауда, зелен бешамел сос, грах и маринован синап</p>
+          <span class="menu-weight">350g</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h4>Parmesan and Truffle Oil Omelette</h4>
+            <span class="menu-price">9.20&#8364;</span>
+          </div>
+          <p class="menu-desc">on homemade mushroom broth with spring onion</p>
+          <p class="menu-desc-bg">Омлет с пармезан и трюфел олио върху домашен гъбен бульон с лук</p>
+          <span class="menu-weight">350g</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h4>Kimchi Hot Dog</h4>
+            <span class="menu-price">8.50&#8364;</span>
+          </div>
+          <p class="menu-desc">with cheese, homemade onion chips, fresh spring onion and sriracha lime mayonnaise</p>
+          <p class="menu-desc-bg">Кимчи хот дог със сирена, домашен чипс от лук, пресен лук и срирача майонеза с лайм</p>
+          <span class="menu-weight">350g</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h4>Lemon Poppy Seed Pancakes</h4>
+            <span class="menu-price">6.20&#8364;</span>
+          </div>
+          <p class="menu-desc">with mascarpone, pistachio and pecan</p>
+          <p class="menu-desc-bg">Лимонени палачинки с мак, маскарпоне с шамфъстък и пекан</p>
+          <span class="menu-weight">350g</span>
+        </div>
+      </div>
+
+      <!-- Drinks -->
+      <div class="menu-category">
+        <h3>Homemade Drinks</h3>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h4>Sage, Mint and Lemon Tea</h4>
+            <span class="menu-price">4.10&#8364;</span>
+          </div>
+          <p class="menu-desc-bg">Чай от салвия, мента и лимон</p>
+          <span class="menu-weight">250ml</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h4>White Sangria</h4>
+            <span class="menu-price">5.37&#8364;</span>
+          </div>
+          <p class="menu-desc">with gold tequila, homemade orange &amp; rosemary syrup, linden syrup, bitters, fruits</p>
+          <p class="menu-desc-bg">Бяла сангрия със златна текила, сироп от портокал и розмарин, сироп липа, битери, плодове</p>
+          <span class="menu-weight">150ml</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h4>Mulled White Wine</h4>
+            <span class="menu-price">5.50&#8364;</span>
+          </div>
+          <p class="menu-desc">with rum, nuts, fruits</p>
+          <p class="menu-desc-bg">Бяло греяно вино с ром, ядки и плодове</p>
+          <span class="menu-weight">150ml</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hours & Location -->
+  <section id="hours" class="hours">
+    <div class="container">
+      <div class="hours-grid">
+        <div class="hours-schedule">
+          <h2>Opening Hours</h2>
+          <table class="hours-table">
+            <tr class="closed"><td>Monday</td><td>Closed</td></tr>
+            <tr class="closed"><td>Tuesday</td><td>Closed</td></tr>
+            <tr><td>Wednesday</td><td>12:00 &ndash; 22:00</td></tr>
+            <tr><td>Thursday</td><td>12:00 &ndash; 22:00</td></tr>
+            <tr><td>Friday</td><td>12:00 &ndash; 22:00</td></tr>
+            <tr><td>Saturday</td><td>12:00 &ndash; 22:00</td></tr>
+            <tr><td>Sunday</td><td>12:00 &ndash; 22:00</td></tr>
+          </table>
+          <p class="hours-note">Kitchen closes at 21:45</p>
+        </div>
+        <div class="hours-location">
+          <h2>Find Us</h2>
+          <address>
+            <p>ul. "Tsar Shishman" 37</p>
+            <p>Sofia Center, 1000 Sofia</p>
+            <p>Bulgaria</p>
+          </address>
+          <p class="location-hint">Hidden in a courtyard opposite St. Sedmochislenitsi church &mdash; look for the small house on the left.</p>
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.8!2d23.325!3d42.693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa8568a3b8073d%3A0x5c099ca62cf053e1!2sThe%20Little%20Things!5e0!3m2!1sen!2sbg!4v1700000000000"
+              width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="The Little Things location on Google Maps">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container contact-inner">
+      <h2>Get in Touch</h2>
+      <p>For reservations and inquiries</p>
+      <a href="tel:+35988249003" class="phone-link">088 249 0030</a>
+      <div class="contact-social">
+        <a href="https://www.instagram.com/thelittlethingssofia/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          <span>@thelittlethingssofia</span>
+        </a>
+        <a href="https://www.facebook.com/TheLittleThingsSofia/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          <span>TheLittleThingsSofia</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-name">The Little Things</p>
+      <p class="footer-tagline">Cooking for you with love since 2014</p>
+      <p class="footer-copy">&copy; 2026 The Little Things. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+      toggle.classList.toggle('active');
+    });
+
+    // Close mobile nav on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        links.classList.remove('open');
+        toggle.classList.remove('active');
+      });
+    });
+
+    // Navbar background on scroll
+    const nav = document.querySelector('.nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+  </script>
+</body>
+</html>
