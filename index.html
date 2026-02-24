@@ -14,13 +14,17 @@
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-inner">
-      <a href="#home" class="nav-logo">The Little Things</a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#menu">Menu</a>
-        <a href="#hours">Hours</a>
-        <a href="#contact">Contact</a>
+      <div class="nav-drawer">
+        <div class="nav-links nav-links-left">
+          <a href="#about">About</a>
+          <a href="#menu">Menu</a>
+        </div>
+        <div class="nav-links nav-links-right">
+          <a href="#hours">Hours</a>
+          <a href="#contact">Contact</a>
+        </div>
       </div>
+      <a href="#home" class="nav-logo">The Little Things</a>
       <button class="nav-toggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -30,12 +34,21 @@
   <!-- Hero -->
   <section id="home" class="hero">
     <div class="hero-image">
-      <img src="images/hero-illustration.jpg" alt="The Little Things - illustrated view of the cozy restaurant with its vine-covered old house, string lights, and garden seating">
+      <img src="images/485807930_685243524006911_8911417259213550965_n.jpg" alt="The Little Things - cozy garden terrace with string lights and lush greenery">
     </div>
     <div class="hero-overlay">
       <div class="hero-content">
-        <p class="hero-subtitle">A cozy restaurant in the heart of Sofia</p>
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-line"></span>
+          <span>Sofia, Bulgaria &middot; Since 2014</span>
+          <span class="hero-eyebrow-line"></span>
+        </div>
+        <h1 class="hero-title">The Little Things</h1>
+        <p class="hero-subtitle">Homemade food with love, hidden in a courtyard in the heart of the city</p>
         <a href="#menu" class="btn">View Today's Specials</a>
+      </div>
+      <div class="hero-scroll">
+        <span class="hero-scroll-line"></span>
       </div>
     </div>
   </section>
@@ -242,16 +255,16 @@
   <script>
     // Mobile nav toggle
     const toggle = document.querySelector('.nav-toggle');
-    const links = document.querySelector('.nav-links');
+    const drawer = document.querySelector('.nav-drawer');
     toggle.addEventListener('click', () => {
-      links.classList.toggle('open');
+      drawer.classList.toggle('open');
       toggle.classList.toggle('active');
     });
 
     // Close mobile nav on link click
-    document.querySelectorAll('.nav-links a').forEach(link => {
+    document.querySelectorAll('.nav-drawer a').forEach(link => {
       link.addEventListener('click', () => {
-        links.classList.remove('open');
+        drawer.classList.remove('open');
         toggle.classList.remove('active');
       });
     });
