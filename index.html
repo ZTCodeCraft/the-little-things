@@ -361,6 +361,14 @@
       });
     });
 
+    // Close mobile nav on outside click
+    document.addEventListener('click', (e) => {
+      if (drawer.classList.contains('open') && !drawer.contains(e.target) && !toggle.contains(e.target)) {
+        drawer.classList.remove('open');
+        toggle.classList.remove('active');
+      }
+    });
+
     // Navbar background on scroll
     const nav = document.querySelector('.nav');
     window.addEventListener('scroll', () => {
