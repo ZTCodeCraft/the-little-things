@@ -722,6 +722,8 @@ a { color: inherit; text-decoration: none; }
   .nav-toggle {
     display: flex;
     order: unset;
+    position: relative;
+    z-index: 201;
   }
 
   /* Hero mobile */
